@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎来到喵喵港~</title>
+</head>
+<body οnlοad="run">
+    <a id="go" href="http://124.220.76.105/">加载中...</a>
+    <script>
+		// 进入页面立即触发
+		(()=>{
+			// 兼容IE
+		    if(document.all) {
+		        document.getElementById("go").click();
+		    }
+		    // 兼容其它浏览器
+		    else {
+		        var e = document.createEvent("MouseEvents");
+		        e.initEvent("click", true, true);
+		        document.getElementById("go").dispatchEvent(e);
+		    }
+		})();
+	</script>
+</body>
+</html>
